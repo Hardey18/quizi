@@ -6,16 +6,9 @@ $(function (){
     var $option2 = $('#option2');
     var $option3 = $('#option3');
     var $option4 = $('#option4');
+    var $answer = $('#answer');
 
-    var orderTemplate = "" + 
-    "<li class=top>" + 
-    "<h4>{{question}}</h4>" + "<br>" +
-    "<button>{{option1}}</button>" + "<br>" +
-    "<button>{{option2}}</button>" + "<br>" +
-    "<button>{{option3}}</button>" + "<br>" +
-    "<button>{{option4}}</button>" + "<br>" +
-    "<button data-id='{{id}}' class='remove'>X</button>" +
-    "</li>";
+    var orderTemplate = $('#order-template').html();
 
     // "<li class=top>" + 
     // "<p><strong>NAME:</strong> {{name}}</p>" + 
@@ -47,6 +40,7 @@ $(function (){
             option2: $option2.val(),
             option3: $option3.val(),
             option4: $option4.val(),
+            answer: $answer.val(),
         };
 
         $.ajax({
