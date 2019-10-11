@@ -14,22 +14,20 @@
     <section>
         <div class="welcome1">
            <h2>User Sign Up</h2>
-            <form action="http://localhost:3000/question.html">
-                <input class="welcome2" type="text" placeholder="Firstname" required/><br>
-                <input class="welcome2" type="text" placeholder="Lastname" required/><br>
-                <input class="welcome2" type="text" placeholder="Username" required/><br>
-                <input class="welcome2" type="text" placeholder="Password" required/><br>
-                <input class="welcome2" type="text" placeholder="Repeat Password" required/><br>
-                <button type="submit" class="welcome3">SIGN UP</button>
+            <form>
+                <input id="firstname" class="welcome2" type="text" placeholder="Firstname"/><br>
+                <input id="lastname" class="welcome2" type="text" placeholder="Lastname"/><br>
+                <input id="email" class="welcome2" type="email" placeholder="Email"/><br>
+                <input id="password" class="welcome2" type="password" placeholder="Password"/><br>
+                <input id="repeatpassword" class="welcome2" type="password" placeholder="Repeat Password"/><br>
+                <button id="signUpBtn" type="submit" class="welcome3">SIGN UP</button>
+                <div class="regMessage"></div>
             </form>
         </div>
         <img class="background" src="./img/suzie.jpg" alt="background">
     </section>
+    <script src="./src/jquery.js"></script>
+    <script src="axios.min.js"></script>
+    <script src="forms.js"></script>
 </body>
-<script src="axios.min.js"></script>
-<script>
-    (function() {
-        document.getElementById('')
-    })
-</script>
 </html>

@@ -6,5 +6,35 @@
       "name": "kunle",
       "drink": "tajutaju"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "adeola",
+      "lastname": "nurudeen",
+      "email": "nurudeenadeolaa@gmail.com",
+      "password": "nurudeen992"
+    },
+    {
+      "firstname": "Owolabi",
+      "lastname": "Afeez",
+      "email": "afeez@gmail.com",
+      "password": "qwerty1234",
+      "id": 2
+    },
+    {
+      "firstname": "oladapo",
+      "lastname": "mubaraq",
+      "email": "mubaraq@gmail.com",
+      "password": "oladapo",
+      "id": 3
+    },
+    {
+      "firstname": "adewale",
+      "lastname": "basit",
+      "email": "basit@yahoo.com",
+      "password": "bobobasit",
+      "id": 4
+    }
   ]
 }

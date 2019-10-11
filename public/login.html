@@ -14,13 +14,17 @@
     <section>
         <div class="welcome1">
            <h2>User Login</h2>
-            <form action="http://localhost:3000/question.html">
-                <input class="welcome2" type="text" placeholder="Username" required/><br>
-                <input class="welcome2" type="text" placeholder="Password" required/><br>
-                <input type="submit" class="welcome3" value="SUBMIT" />
+            <form>
+                <input id="usernameLogin" class="welcome2" type="text" placeholder="Username"/><br>
+                <input id="passwordLogin" class="welcome2" type="text" placeholder="Password"/><br>
+                <button type="submit" class="welcome3">SUBMIT</button>
+                <div class="regMessage"></div>
             </form>
         </div>
         <img class="background" src="./img/suzie.jpg" alt="background">
     </section>
+    <script type="text/javascript" src="./src/jquery.js"></script>
+    <script src="axios.min.js"></script>
+    <script type="text/javascript" src="forms.js"></script>
 </body>
 </html>
