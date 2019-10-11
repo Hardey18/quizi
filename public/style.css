@@ -59,6 +59,7 @@ header {
     margin: 0 20px 20px 20px;
     font-weight: bolder;
     border: none;
+    text-decoration: NONE;
     padding: 10px 20px;
     background-color: turquoise;
     color: whitesmoke;
@@ -96,12 +97,20 @@ header {
 }
 
 .adminlogin1 {
+    margin: 0 20px 20px 20px;
+    font-weight: bolder;
+    border: none;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: turquoise;
     color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .adminlogin1:hover {
     color: black;
+    transition: 500ms;
+    background-color: teal;
 }
 
 .welcome1 {
@@ -129,9 +138,17 @@ header {
 .welcome3 {
     font-weight: bolder;
     border: none;
+    text-align: center;
     padding: 10px 20px;
     background-color: turquoise;
     color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.welcome3:hover {
+    color: black;
+    transition: 500ms;
+    background-color: teal;
 }
