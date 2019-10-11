@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <img class="top-image" src="./img/logo-light.png" alt="welcome logo">
+       <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
     </header>
     <section>
-        <div class="welcome1">
+        <div class="welcome1 welsign">
            <h2>User Sign Up</h2>
             <form>
                 <input id="firstname" class="welcome2" type="text" placeholder="Firstname"/><br>
@@ -21,9 +21,10 @@
                 <input id="password" class="welcome2" type="password" placeholder="Password"/><br>
                 <input id="repeatpassword" class="welcome2" type="password" placeholder="Repeat Password"/><br>
                 <button id="signUpBtn" type="submit" class="welcome3">SIGN UP</button>
-                <div class="regMessage"></div>
                 <p class="checkLogin"></p>
             </form>
+            <p>Already have an account? <a class="already" href="http://localhost:3000/login.html">Log In</a></p>
+            <div class="regMessage"></div>
         </div>
         <img class="background" src="./img/suzie.jpg" alt="background">
     </section>
