@@ -25,7 +25,7 @@ $(document).ready(function() {
         //make get request to check if the user already exist
         $.ajax({
             method: 'GET',
-            url: 'http://localhost:3000/users?email=${email}',
+            url: `http://localhost:3000/users?email=${email}`,
             data: {
                 email,
             },
@@ -61,11 +61,11 @@ $(document).ready(function() {
     //Login function
     $('.welcome3').click(function(event) {
         event.preventDefault();
-        const usernameLogin = $('#usernameLogin').val();
+        const emailLogin = $('#emailLogin').val();
         const passwordLogin = $('#passwordLogin').val();
 
         //check if user input is empty
-        if(!usernameLogin || !passwordLogin) {
+        if(!emailLogin || !passwordLogin) {
             $('.regMessage').html('Kindly fill in all fields');
             return;
         }
@@ -73,6 +73,62 @@ $(document).ready(function() {
         //check if the user is in the database
         $.ajax({
             method: 'GET',
-        })
-    })
-})
+            url: `http://localhost:3000/users?email=${emailLogin}&password=${passwordLogin}`,
+            data: {
+                email: emailLogin,
+                password: passwordLogin,
+            },
+            beforeSend: function() {
+                $('.regMessage').html('Loading...');
+            },
+            success: function(response) {
+                if(response.length) {
+                    localStorage.setItem('email', emailLogin);
+                    window.location = "http://localhost:3000/question.html";
+                } else {
+                    $('.regMessage').html('Username or password incorrect')
+                }
+            },
+        });
+    });
+
+    //admin login function
+    $('.adminBtn').click(function(event) {
+        event.preventDefault();
+        const adminEmail = $('#adminEmail').val();
+        const adminPassword = $('#adminPassword').val();
+        if (!adminEmail || !adminPassword) {
+            $('.regMessage').html('Kindly fill in all fields');
+            return;
+        }
+
+        //Check if the user is in the database
+        $.ajax({
+            method: 'GET',
+            url: `http://localhost:3000/adminLogin?email=${adminEmail}&password=${adminPassword}`,
+            data: {
+                email: adminEmail,
+                password: adminPassword,
+            },
+            beforeSend: function() {
+                $('.regMessage').html('Loading...');
+            },
+            success: function(response) {
+                if(response.length) {
+                    localStorage.setItem('email', adminEmail);
+                    window.location = "http://localhost:3000/order.html";
+                } else {
+                    $('.regMessage').html('Username or password incorrect')
+                }
+            },
+        });
+    });
+
+    //Logout function
+    $('.logoutBtn').click(function() {
+        //clear the local storage and redirect to signup page
+        localStorage.clear();
+        $('.checkLogin').html('Kindly login');
+        window.location.assign('http://localhost:3000/signup.html')
+    });
+});

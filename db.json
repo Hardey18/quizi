@@ -35,6 +35,20 @@
       "email": "basit@yahoo.com",
       "password": "bobobasit",
       "id": 4
+    },
+    {
+      "firstname": "Olubukola",
+      "lastname": "Theophillus",
+      "email": "theobukky@gmail.com",
+      "password": "theobukky",
+      "id": 5
+    }
+  ],
+  "adminLogin": [
+    {
+      "index": 1,
+      "email": "nurudeenadeolaa@gmail.com",
+      "password": "nurudeen992"
     }
   ]
 }
