@@ -5,8 +5,11 @@ body {
 
 .top {
     margin: 20px;
-    background-color: grey;
     padding: 10px;
+}
+
+.none {
+    background-color: lightgray;
 }
 
 button {
@@ -73,7 +76,7 @@ header {
 }
 
 .level {
-    padding-left: 230px;
+    padding-left: 200px;
 }
 
 .clearfix {
@@ -209,4 +212,9 @@ header {
     color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
+}
+
+.question {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }

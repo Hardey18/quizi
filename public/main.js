@@ -1,3 +1,4 @@
+let questions;
 $(function (){
 
     var $orders = $('#orders');
@@ -24,6 +25,7 @@ $(function (){
         type: 'GET',
         url: 'order',
         success: function(orders) {
+            questions = orders;
             $.each(orders, function(i, order) {
                 addOrder(order)
             });
@@ -59,6 +61,7 @@ $(function (){
 
     $orders.delegate('.remove', 'click', function() {
         var $li = $(this).closest('li');
+        
 
         $.ajax({
             type: 'DELETE',
