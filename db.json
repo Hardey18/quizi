@@ -1,15 +1,6 @@
 {
   "order": [
     {
-      "question": "Which of the following country is in Africa?",
-      "option1": "South Africa",
-      "option2": "France",
-      "option3": "Australia",
-      "option4": "Great Britain",
-      "answer": "South Africa",
-      "id": 1
-    },
-    {
       "question": "Which of the following is not a programming language?",
       "option1": "Python",
       "option2": "JavaScript",
@@ -19,15 +10,6 @@
       "id": 2
     },
     {
-      "question": "What is my name",
-      "option1": "Ade",
-      "option2": "Ada",
-      "option3": "Aajaja",
-      "option4": "Afeez",
-      "answer": "Afeez",
-      "id": 3
-    },
-    {
       "question": "Which of the following is not a mobile device",
       "option1": "Iphone",
       "option2": "Android",
@@ -35,6 +17,15 @@
       "option4": "Java",
       "answer": "Mainframe",
       "id": 4
+    },
+    {
+      "question": "we aew hefekv",
+      "option1": "is",
+      "option2": "it",
+      "option3": "re",
+      "option4": "as",
+      "answer": "it",
+      "id": 6
     }
   ],
   "inputOrder": [
@@ -79,6 +70,13 @@
       "email": "theobukky@gmail.com",
       "password": "theobukky",
       "id": 5
+    },
+    {
+      "firstname": "Afeez",
+      "lastname": "Awoyemi",
+      "email": "damafeez@gmail.com",
+      "password": "password",
+      "id": 6
     }
   ],
   "adminLogin": [
@@ -86,6 +84,13 @@
       "index": 1,
       "email": "nurudeenadeolaa@gmail.com",
       "password": "nurudeen992"
+    }
+  ],
+  "canResult": [
+    {
+      "index": 1,
+      "firstname": "Olubukola",
+      "score": 25
     }
   ]
 }

@@ -8,10 +8,33 @@ const verifyAnswer =  (answer) => {
                     correct.push(inputEl.value)
                 }});
         });
-        // if(inputEl.value == questions[index].answer) { 
-        //     $('.check').on('click', function() {
-        //         $('#slide').slideUp('slow');
-        //     });
-        // }
     document.querySelector('#results').innerText = `Your result is: ${correct.length}/${questions.length}`
 }
+
+const check = (id) => {
+    event.preventDefault();
+    const parent = event.target.parentNode;
+    const selectedInput = parent.querySelector('input[type=radio]:checked');
+    let isCorrect = false;
+    const question = questions.find((_question) => _question.id == id);
+    if (selectedInput && question) isCorrect = selectedInput.value == question.answer;
+
+    var resultElement = parent.querySelector(`#result-${id}`);
+
+    const resultText = isCorrect ? 'Correct!' : 'Wrong!';
+    const resultClass = `${isCorrect ? 'correct' : 'wrong'}-answer'`;
+    if (!resultElement) {
+        resultElement = document.createElement('div');
+        resultElement.id = `result-${id}`;
+        parent.append(resultElement);
+    }
+
+    resultElement.innerText = resultText;
+    resultElement.className = resultClass;
+}
+
+function view(id) {
+    event.preventDefault();
+    window.location.assign(`http://localhost:3000/question.html?id=${id}`);
+}
+

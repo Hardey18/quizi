@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+        <header>
+                <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
+        </header>
+    <h1 class="question question-head">WELCOME!</h1>
+
+    <h2 class="question question-head">Sharpen your wits!</h2>
+    <ol id="orders"></ol>
+
+    <template id="order-template">
+        <div class="none question-selector">
+            <li class='top' id='user'>
+                <h2 class="question">{{question}}</h2>
+                <form name="testForm" id="formy">
+                    <input type='radio' class="test" id="r1" value={{option1}} name='choice'>{{option1}}</input>
+                    <br>
+                    <input type='radio' id="r2" class="test" value={{option2}} name='choice'>{{option2}}</input>
+                    <br>
+                    <input type='radio' id="r3" class="test" value={{option3}} name='choice'>{{option3}}</input>
+                    <br>
+                    <input type='radio' id="r4" class="test" value={{option4}} name='choice'>{{option4}}</input>
+                    <br>
+                    <p style="display:none" id="r5" value="opt5">{{answer}}</p>
+                    <br>
+                    <div class="button-functions">
+                        <button data-id='{{id}}' class='remove individual'>DELETE</button>
+                        <button class="check individual" onclick="check({{id}})" data-id='{{id}}'>CHECK</button>
+                        <button class="individual" onclick="view({{id}})" data-id='{{id}}'>VIEW</button>
+                    </div>
+                </form>
+            </li>
+        </div>
+    </template>
+
+    <button id="submit" onclick="verifyAnswer()">Get Results</button>
+    <div id="results"></div>
+    <button class="logoutBtn">LOG OUT</button>
+
+    <script src="src/jquery.js"></script>
+    <script src="mustache.js"></script>
+    <script src="question.js"></script>
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+</body>
+
+</html>

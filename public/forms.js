@@ -51,7 +51,7 @@ $(document).ready(function() {
                         },
                         success: function() {
                             // $('.regMessage').html('Registration Successful');
-                            window.location = "http://localhost:3000/question.html";
+                            window.location = "http://localhost:3000/questions.html";
                         },
                     });
                 }
@@ -84,7 +84,7 @@ $(document).ready(function() {
             success: function(response) {
                 if(response.length) {
                     localStorage.setItem('email', emailLogin);
-                    window.location = "http://localhost:3000/question.html";
+                    window.location = "http://localhost:3000/questions.html";
                 } else {
                     $('.regMessage').html('Username or password incorrect')
                 }
