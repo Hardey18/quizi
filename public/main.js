@@ -73,4 +73,10 @@ $(function (){
             }
         });
     });
+    
+    $orders.delegate('.editOrder', 'click', function() {
+        var $li = $(this).closest('li');
+        $li.find('input.topquestion').val($li.find('h2.topquestion').html() );
+        $li.addClass('edit');
+    });
 });

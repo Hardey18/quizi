@@ -290,3 +290,14 @@ header {
     background-color: darkred;
 }
 
+.edit {
+    display: none;
+}
+
+.edit .edit {
+    display: initial;
+}
+
+.edit .noedit {
+    display: none;
+}
