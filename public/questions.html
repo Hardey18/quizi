@@ -9,19 +9,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
-<body>
+<body style="background-color:orange">
         <header>
                 <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
         </header>
-    <h1 class="question question-head">WELCOME!</h1>
+    <h1 class="question-head">WELCOME!</h1>
 
-    <h2 class="question question-head">Sharpen your wits!</h2>
+    <h2 class="question">Sharpen your wits!</h2>
     <ol id="orders"></ol>
 
     <template id="order-template">
         <div class="none question-selector">
             <li class='top' id='user'>
-                <h2 class="question">{{question}}</h2>
+                <h2 class="question-each">{{question}}</h2>
                 <form name="testForm" id="formy">
                     <input type='radio' class="test" id="r1" value={{option1}} name='choice'>{{option1}}</input>
                     <br>
@@ -33,19 +33,19 @@
                     <br>
                     <p style="display:none" id="r5" value="opt5">{{answer}}</p>
                     <br>
-                    <div class="button-functions">
                         <button data-id='{{id}}' class='remove individual'>DELETE</button>
                         <button class="check individual" onclick="check({{id}})" data-id='{{id}}'>CHECK</button>
                         <button class="individual" onclick="view({{id}})" data-id='{{id}}'>VIEW</button>
-                    </div>
                 </form>
             </li>
         </div>
     </template>
 
-    <button id="submit" onclick="verifyAnswer()">Get Results</button>
-    <div id="results"></div>
-    <button class="logoutBtn">LOG OUT</button>
+    <div class="bottom-elem">
+        <button id="submit" onclick="verifyAnswer()">Get Results</button>
+        <button class="logoutBtn">LOG OUT</button>
+        <div id="results"></div>
+    </div>
 
     <script src="src/jquery.js"></script>
     <script src="mustache.js"></script>

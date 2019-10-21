@@ -19,7 +19,7 @@ const check = (id) => {
     const question = questions.find((_question) => _question.id == id);
     if (selectedInput && question) isCorrect = selectedInput.value == question.answer;
 
-    var resultElement = parent.querySelector(`#result-${id}`);
+    let resultElement = parent.querySelector(`#result-${id}`);
 
     const resultText = isCorrect ? 'Correct!' : 'Wrong!';
     const resultClass = `${isCorrect ? 'correct' : 'wrong'}-answer'`;

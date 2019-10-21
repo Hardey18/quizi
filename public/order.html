@@ -7,18 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
-<body>
-    <h3>Admin Section</h3>
-    <!-- <p>NAME: <input type="text" id="name"></p>
-    <p>DRINK: <input type="text" id="drink"></p> -->
+<body style="background-color:orange">
+        <header>
+                <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
+        </header>
 
-    <p>Question: <textarea type="text" id="question"></textarea></p>
-    <p>Option 1: <input type="text" id="option1"></p>
-    <p>Option 2: <input type="text" id="option2"></p>
-    <p>Option 3: <input type="text" id="option3"></p>
-    <p>Option 4: <input type="text" id="option4"></p>
-    <p>Answer: <input type="text" id="answer"></p>
-    <button id="add-order">Add!</button>
+    <div>
+        <h1>Admin Section</h1>
+        <!-- <p>NAME: <input type="text" id="name"></p>
+        <p>DRINK: <input type="text" id="drink"></p> -->
+
+        <p>Question: </p><textarea class="admintop" type="text" id="question"></textarea>
+        <p>Option 1: </p><input class="adminopt" type="text" id="option1">
+        <p>Option 2: </p><input class="adminopt" type="text" id="option2">
+        <p>Option 3: </p><input class="adminopt" type="text" id="option3">
+        <p>Option 4: </p><input class="adminopt" type="text" id="option4">
+        <p>Answer: </p><input class="adminopt" type="text" id="answer">
+        <button id="add-order">Add!</button>
+    </div>        
 
     <script src="src/jquery.js"></script>
     <script src="main.js"></script>

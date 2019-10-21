@@ -17,15 +17,6 @@
       "option4": "Java",
       "answer": "Mainframe",
       "id": 4
-    },
-    {
-      "question": "we aew hefekv",
-      "option1": "is",
-      "option2": "it",
-      "option3": "re",
-      "option4": "as",
-      "answer": "it",
-      "id": 6
     }
   ],
   "inputOrder": [
@@ -77,6 +68,13 @@
       "email": "damafeez@gmail.com",
       "password": "password",
       "id": 6
+    },
+    {
+      "firstname": "acbdhj",
+      "lastname": "jhcvg",
+      "email": "hxbjsjh",
+      "password": "hxcbjjh",
+      "id": 7
     }
   ],
   "adminLogin": [
@@ -84,13 +82,6 @@
       "index": 1,
       "email": "nurudeenadeolaa@gmail.com",
       "password": "nurudeen992"
-    }
-  ],
-  "canResult": [
-    {
-      "index": 1,
-      "firstname": "Olubukola",
-      "score": 25
     }
   ]
 }

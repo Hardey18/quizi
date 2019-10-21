@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //Registration Function
-    $('#signUpBtn').click(function(event) {
+    $('.welcome3').click(function(event) {
         event.preventDefault();
         const firstname = $('#firstname').val();
         const lastname = $('#lastname').val();
@@ -15,7 +15,7 @@ $(document).ready(function() {
         }
 
         //check if password match
-        if(password !== repeatpassword) {
+        if (password != repeatpassword) {
             $('.regMessage').html('Password does not match');
             $('#password').css('border', '2px solid red');
             $('#repeatpassword').css('border', '2px solid red');

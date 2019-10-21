@@ -17,6 +17,7 @@ body {
 
 .none:hover {
     background-color: darkgray;
+    transition: 900ms;
 }
 
 button {
@@ -151,7 +152,11 @@ header {
 .welcome2 {
     padding: 10px;
     border: none;
+    border-radius: 4px;
     margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(220, 220, 220, 10%);
+    color: whitesmoke;
 }
 
 .welcome3 {
@@ -199,19 +204,11 @@ header {
 }
 
 .already {
-    text-align: center;
-    padding: 5px 10px;
-    background-color: turquoise;
-    color: whitesmoke;
+    color: turquoise;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     cursor: pointer;
-}
-
-.already:hover {
-    color: black;
-    transition: 500ms;
-    background-color: teal;
+    font-weight: bolder;
 }
 
 .welcome1 > p {
@@ -223,18 +220,19 @@ header {
 
 .question-head {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
+    font-size: 50px;
     text-align: center;
 }
 
 .question {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
+    text-align: center;
 }
 
-.button-functions {
-    width: 35%;
-    margin: 0 auto;
+.question-each {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }
 
 .individual {
@@ -250,12 +248,45 @@ header {
 
 .individual:hover {
     background-color: teal;
+    transition: 500ms;
 }
 
 .remove {
-    background-color: red;
+    background-color: rgba(200, 0, 0, 40%)
 }
 
 .remove:hover {
     background-color: darkred;
+    transition: 500ms;
 }
+
+.bottom-elem {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.bottom-elem > button {
+    border: none;
+    color: whitesmoke;
+    background-color: turquoise;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bottom-elem > button:last-child {
+    background-color: red;
+}
+
+.bottom-elem > button:hover {
+    background-color: teal;
+    transition: 500ms;
+}
+
+.bottom-elem > button:last-child:hover {
+    background-color: darkred;
+}
+
