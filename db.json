@@ -1,22 +1,31 @@
 {
   "order": [
     {
-      "question": "Which of the following is not a programming language?",
-      "option1": "Python",
-      "option2": "JavaScript",
-      "option3": "CSS",
-      "option4": "C#",
-      "answer": "CSS",
+      "question": "Which is not a JavaScript Framework?",
+      "option1": "PythonScript",
+      "option2": "JQuery",
+      "option3": "Django",
+      "option4": "Node JS",
+      "answer": "Django",
+      "id": 1
+    },
+    {
+      "question": "dajhcgu",
+      "option1": "hcvg",
+      "option2": "icvuh",
+      "option3": "jybcu",
+      "option4": "hcwyi",
+      "answer": "jybcu",
       "id": 2
     },
     {
-      "question": "Which of the following is not a mobile device",
-      "option1": "Iphone",
-      "option2": "Android",
-      "option3": "Mainframe",
-      "option4": "Java",
-      "answer": "Mainframe",
-      "id": 4
+      "question": "sfkjvsbh",
+      "option1": "kcbuj",
+      "option2": "ibvbeh",
+      "option3": "ifcyuh",
+      "option4": "idcbh",
+      "answer": "kcbuj",
+      "id": 3
     }
   ],
   "inputOrder": [

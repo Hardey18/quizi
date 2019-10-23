@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //Registration Function
-    $('.welcome3').click(function(event) {
+    $('.welcome3').click(function (event) {
         event.preventDefault();
         const firstname = $('#firstname').val();
         const lastname = $('#lastname').val();
@@ -34,7 +34,8 @@ $(document).ready(function() {
             },
             success: function(response) {
                 if(response.length) {
-                    $('.regMessage').html('User already exist');
+                    $('.regMessage').html('User with this Email already exist');
+                    $('#email').css('border', '2px solid red');
                 } else {
                     //submit the user data if the user does not exist
                     $.ajax({
@@ -118,7 +119,7 @@ $(document).ready(function() {
                     localStorage.setItem('email', adminEmail);
                     window.location = "http://localhost:3000/order.html";
                 } else {
-                    $('.regMessage').html('Username or password incorrect')
+                    $('.regMessage').html('Username or password incorrect');
                 }
             },
         });

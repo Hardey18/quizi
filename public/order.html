@@ -12,23 +12,40 @@
                 <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
         </header>
 
-    <div>
+    <div class="adminTop">
         <h1>Admin Section</h1>
-        <!-- <p>NAME: <input type="text" id="name"></p>
-        <p>DRINK: <input type="text" id="drink"></p> -->
 
-        <p>Question: </p><textarea class="admintop" type="text" id="question"></textarea>
-        <p>Option 1: </p><input class="adminopt" type="text" id="option1">
-        <p>Option 2: </p><input class="adminopt" type="text" id="option2">
-        <p>Option 3: </p><input class="adminopt" type="text" id="option3">
-        <p>Option 4: </p><input class="adminopt" type="text" id="option4">
-        <p>Answer: </p><input class="adminopt" type="text" id="answer">
-        <button id="add-order">Add!</button>
+        <p>Question: </p><textarea class="adminarea welcome2" type="text" id="question"></textarea>
+        <p>Option 1: </p><input class="adminopt welcome2" type="text" id="option1">
+        <p>Option 2: </p><input class="adminopt welcome2" type="text" id="option2">
+        <p>Option 3: </p><input class="adminopt welcome2" type="text" id="option3">
+        <p>Option 4: </p><input class="adminopt welcome2" type="text" id="option4">
+        <p>Answer: </p><input class="adminopt welcome2" type="text" id="answer">
+        <button class="individual" id="add-order">Add!</button><br>
+        <div class="quesMessage"></div>
+        <a href="http://localhost:3000/adminquestion.html?">View Questions</a>
     </div>        
 
     <script src="src/jquery.js"></script>
     <script src="main.js"></script>
     <script src="question.js"></script>
     <script src="mustache.js"></script>
+    
+    <script>
+//        $('#add-order').click(function (event) {
+//            event.preventDefault();
+//            const question = $('#ques1').val();
+//            const option1 = $('#opt1').val();
+//            const option2 = $('#opt2').val();
+//            const option3 = $('#opt3').val();
+//            const option4 = $('#opt4').val();
+//            const answer = $('#ans').val();
+//        
+//            if (!question || !option1 || !option2 || !option3 || !option4 || !answer) {
+//                $('.quesMessage').html('Kindly fill in all fields!');
+//                return;
+//            }
+//        })
+    </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questions</title>
+    <title>Admin Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
@@ -34,8 +34,12 @@
                     <br>
                     <p style="display:none" id="r5" value="opt5">{{answer}}</p>
                     <br>
+                        <button data-id='{{id}}' class='remove individual'>DELETE</button>
                         <button class="check individual" onclick="check({{id}})" data-id='{{id}}'>CHECK</button>
                         <button class="individual" onclick="view({{id}})" data-id='{{id}}'>VIEW</button>
+                        <button class="editOrder noedit">EDIT</button>
+                        <button class="saveEdit edit">SAVE</button>
+                        <button class="cancelEdit edit">CANCEL</button>
                 </form>
             </li>
         </div>

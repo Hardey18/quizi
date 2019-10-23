@@ -56,7 +56,8 @@ $(function (){
                 alert('error saving order');
             }
         });
-        $('button').after('<p>Order added successfully!</p>')
+//        $('button').after('<p>Order added successfully!</p>')
+        alert('Question added successfully');
     });
 
     $orders.delegate('.remove', 'click', function() {
@@ -78,5 +79,25 @@ $(function (){
         var $li = $(this).closest('li');
         $li.find('input.topquestion').val($li.find('h2.topquestion').html() );
         $li.addClass('edit');
+    });
+    
+    $orders.delegate('.saveEdit', 'click', function() {
+        var $li = $(this).closest('li');
+        var order = {
+            question: $li.find('input.topquestion').val(),
+        };
+        
+        $.ajax({
+            type: 'PUT',
+            url: 'order' + "/" + $li.attr('data-id'),
+            data: order,
+            success: function(newOrder) {
+                $li.find('h2.topquestion').html(order.question);
+                $li.removeClass('edit');
+            },
+            error: function() {
+                alert('error updating question');
+            }
+        });
     });
 });
