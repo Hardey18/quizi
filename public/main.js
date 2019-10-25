@@ -58,6 +58,8 @@ $(function (){
         });
 //        $('button').after('<p>Order added successfully!</p>')
         alert('Question added successfully');
+
+        document.getElementById('myForm').reset();
     });
 
     $orders.delegate('.remove', 'click', function() {

@@ -22,7 +22,7 @@
         <div class="none question-selector">
             <li data-id="{{id}}" class='top' id='user'>
                 <h2 class="question-each topquestion noedit">{{question}}</h2>
-                <input class="edit topquestion">
+                <input class="edit topquestion welcome2">
                 <form name="testForm" id="formy">
                     <input type='radio' class="test" id="r1" value={{option1}} name='choice'>{{option1}}</input>
                     <br>
@@ -37,9 +37,9 @@
                         <button data-id='{{id}}' class='remove individual'>DELETE</button>
                         <button class="check individual" onclick="check({{id}})" data-id='{{id}}'>CHECK</button>
                         <button class="individual" onclick="view({{id}})" data-id='{{id}}'>VIEW</button>
-                        <button class="editOrder noedit">EDIT</button>
-                        <button class="saveEdit edit">SAVE</button>
-                        <button class="cancelEdit edit">CANCEL</button>
+                        <button class="individual" class="editOrder noedit">EDIT</button>
+                        <button class="individual" class="saveEdit edit">SAVE</button>
+                        <button class="individual" class="cancelEdit edit">CANCEL</button>
                 </form>
             </li>
         </div>

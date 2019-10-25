@@ -12,9 +12,9 @@
                 <a href="http://localhost:3000/"><img class="top-image" src="./img/logo-light.png" alt="welcome logo"></a>
         </header>
 
-    <div class="adminTop">
-        <h1>Admin Section</h1>
-
+    <div class="adminTop" style="margin-bottom: 30px;">
+        <h1>Create a question!</h1>
+    <form id="myForm">
         <p>Question: </p><textarea class="adminarea welcome2" type="text" id="question"></textarea>
         <p>Option 1: </p><input class="adminopt welcome2" type="text" id="option1">
         <p>Option 2: </p><input class="adminopt welcome2" type="text" id="option2">
@@ -23,7 +23,8 @@
         <p>Answer: </p><input class="adminopt welcome2" type="text" id="answer">
         <button class="individual" id="add-order">Add!</button><br>
         <div class="quesMessage"></div>
-        <a href="http://localhost:3000/adminquestion.html?">View Questions</a>
+        <a class="already" href="http://localhost:3000/adminquestion.html?">View Questions</a>
+    </form>
     </div>        
 
     <script src="src/jquery.js"></script>

@@ -8,7 +8,7 @@ const verifyAnswer =  (answer) => {
                     correct.push(inputEl.value)
                 }});
         });
-    document.querySelector('#results').innerText = `Your result is: ${correct.length}/${questions.length}`
+    document.querySelector('#results').innerText = `Your result is: ${correct.length}/${questions.length}`;
 }
 
 const check = (id) => {
