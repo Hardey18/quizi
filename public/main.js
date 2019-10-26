@@ -77,11 +77,15 @@ $(function (){
         });
     });
     
-    $orders.delegate('.editOrder', 'click', function() {
-        var $li = $(this).closest('li');
-        $li.find('input.topquestion').val($li.find('h2.topquestion').html() );
-        $li.addClass('edit');
-    });
+     $orders.delegate('.editOrder', 'click', function() {
+         var $li = $(this).closest('li');
+         $li.find('input.topquestion').val($li.find('span.topquestion').html() );
+         $li.addClass('edit');
+     });
+
+     $orders.delegate('.cancelEdit', 'click', function() {
+        $(this).closest('li').removeClass('edit');
+     });
     
     $orders.delegate('.saveEdit', 'click', function() {
         var $li = $(this).closest('li');
@@ -94,7 +98,7 @@ $(function (){
             url: 'order' + "/" + $li.attr('data-id'),
             data: order,
             success: function(newOrder) {
-                $li.find('h2.topquestion').html(order.question);
+                $li.find('span.topquestion').html(order.question);
                 $li.removeClass('edit');
             },
             error: function() {
